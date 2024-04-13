@@ -5,10 +5,11 @@
 import * as $$$$$$$$$$$0 from "./apps/decohub.ts";
 import * as $$$$$$$$$$$1 from "./apps/site.ts";
 import * as $$$2 from "./loaders/availableIcons.ts";
-import * as $$$3 from "./loaders/icons.ts";
+import * as $$$3 from "./loaders/countries.ts";
+import * as $$$4 from "./loaders/icons.ts";
 import * as $$$0 from "./loaders/Layouts/ProductCard.tsx";
 import * as $$$1 from "./loaders/List/Sections.tsx";
-import * as $$$4 from "./loaders/zequotes.ts";
+import * as $$$5 from "./loaders/zequotes.ts";
 import * as $$$$$$0 from "./sections/Animation/Animation.tsx";
 import * as $$$$$$1 from "./sections/Cards/IconCardsCarousel.tsx";
 import * as $$$$$$2 from "./sections/Cards/IconCardsCarouselWithImage.tsx";
@@ -23,50 +24,52 @@ import * as $$$$$$10 from "./sections/Content/BlogPosts.tsx";
 import * as $$$$$$11 from "./sections/Content/CallToAction.tsx";
 import * as $$$$$$12 from "./sections/Content/Faq.tsx";
 import * as $$$$$$13 from "./sections/Content/Features.tsx";
-import * as $$$$$$14 from "./sections/Content/Hero.tsx";
-import * as $$$$$$15 from "./sections/Content/ImageSection.tsx";
-import * as $$$$$$16 from "./sections/Content/Intro.tsx";
-import * as $$$$$$17 from "./sections/Content/Logos.tsx";
-import * as $$$$$$18 from "./sections/Content/Partners.tsx";
-import * as $$$$$$19 from "./sections/Content/RichText.tsx";
-import * as $$$$$$20 from "./sections/Content/Table.tsx";
-import * as $$$$$$21 from "./sections/Content/Testimonials.tsx";
-import * as $$$$$$22 from "./sections/Content/TextWithImage.tsx";
-import * as $$$$$$23 from "./sections/Content/zequotes.tsx";
-import * as $$$$$$24 from "./sections/Footer/Footer.tsx";
-import * as $$$$$$25 from "./sections/Gallery.tsx";
-import * as $$$$$$26 from "./sections/Header/Header.tsx";
-import * as $$$$$$27 from "./sections/Images/BannerGrid.tsx";
-import * as $$$$$$28 from "./sections/Images/Carousel.tsx";
-import * as $$$$$$29 from "./sections/Images/ImageGallery.tsx";
-import * as $$$$$$30 from "./sections/Images/ShoppableBanner.tsx";
-import * as $$$$$$31 from "./sections/Links/LinkTree.tsx";
-import * as $$$$$$32 from "./sections/Links/Shortcuts.tsx";
-import * as $$$$$$33 from "./sections/Miscellaneous/CampaignTimer.tsx";
-import * as $$$$$$34 from "./sections/Miscellaneous/CookieConsent.tsx";
-import * as $$$$$$35 from "./sections/Miscellaneous/Slide.tsx";
-import * as $$$$$$36 from "./sections/Newsletter/Newsletter.tsx";
-import * as $$$$$$37 from "./sections/Product/ImageGalleryFrontBack.tsx";
-import * as $$$$$$38 from "./sections/Product/NotFound.tsx";
-import * as $$$$$$39 from "./sections/Product/NotFoundChallenge.tsx";
-import * as $$$$$$40 from "./sections/Product/ProductDetails.tsx";
-import * as $$$$$$41 from "./sections/Product/ProductShelf.tsx";
-import * as $$$$$$42 from "./sections/Product/ProductShelfTabbed.tsx";
-import * as $$$$$$43 from "./sections/Product/SearchResult.tsx";
-import * as $$$$$$44 from "./sections/Product/ShelfWithImage.tsx";
-import * as $$$$$$45 from "./sections/Product/Wishlist.tsx";
-import * as $$$$$$46 from "./sections/Social/InstagramPosts.tsx";
-import * as $$$$$$47 from "./sections/Social/WhatsApp.tsx";
-import * as $$$$$$48 from "./sections/Theme/Theme.tsx";
-import * as $$$$$$49 from "./sections/Weather/Weather.tsx";
+import * as $$$$$$14 from "./sections/Content/Flags.tsx";
+import * as $$$$$$15 from "./sections/Content/Hero.tsx";
+import * as $$$$$$16 from "./sections/Content/ImageSection.tsx";
+import * as $$$$$$17 from "./sections/Content/Intro.tsx";
+import * as $$$$$$18 from "./sections/Content/Logos.tsx";
+import * as $$$$$$19 from "./sections/Content/Partners.tsx";
+import * as $$$$$$20 from "./sections/Content/RichText.tsx";
+import * as $$$$$$21 from "./sections/Content/Table.tsx";
+import * as $$$$$$22 from "./sections/Content/Testimonials.tsx";
+import * as $$$$$$23 from "./sections/Content/TextWithImage.tsx";
+import * as $$$$$$24 from "./sections/Content/zequotes.tsx";
+import * as $$$$$$25 from "./sections/Footer/Footer.tsx";
+import * as $$$$$$26 from "./sections/Gallery.tsx";
+import * as $$$$$$27 from "./sections/Header/Header.tsx";
+import * as $$$$$$28 from "./sections/Images/BannerGrid.tsx";
+import * as $$$$$$29 from "./sections/Images/Carousel.tsx";
+import * as $$$$$$30 from "./sections/Images/ImageGallery.tsx";
+import * as $$$$$$31 from "./sections/Images/ShoppableBanner.tsx";
+import * as $$$$$$32 from "./sections/Links/LinkTree.tsx";
+import * as $$$$$$33 from "./sections/Links/Shortcuts.tsx";
+import * as $$$$$$34 from "./sections/Miscellaneous/CampaignTimer.tsx";
+import * as $$$$$$35 from "./sections/Miscellaneous/CookieConsent.tsx";
+import * as $$$$$$36 from "./sections/Miscellaneous/Slide.tsx";
+import * as $$$$$$37 from "./sections/Newsletter/Newsletter.tsx";
+import * as $$$$$$38 from "./sections/Product/ImageGalleryFrontBack.tsx";
+import * as $$$$$$39 from "./sections/Product/NotFound.tsx";
+import * as $$$$$$40 from "./sections/Product/NotFoundChallenge.tsx";
+import * as $$$$$$41 from "./sections/Product/ProductDetails.tsx";
+import * as $$$$$$42 from "./sections/Product/ProductShelf.tsx";
+import * as $$$$$$43 from "./sections/Product/ProductShelfTabbed.tsx";
+import * as $$$$$$44 from "./sections/Product/SearchResult.tsx";
+import * as $$$$$$45 from "./sections/Product/ShelfWithImage.tsx";
+import * as $$$$$$46 from "./sections/Product/Wishlist.tsx";
+import * as $$$$$$47 from "./sections/Social/InstagramPosts.tsx";
+import * as $$$$$$48 from "./sections/Social/WhatsApp.tsx";
+import * as $$$$$$49 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$50 from "./sections/Weather/Weather.tsx";
 
 const manifest = {
   "loaders": {
     "deco-sites/campleite/loaders/availableIcons.ts": $$$2,
-    "deco-sites/campleite/loaders/icons.ts": $$$3,
+    "deco-sites/campleite/loaders/countries.ts": $$$3,
+    "deco-sites/campleite/loaders/icons.ts": $$$4,
     "deco-sites/campleite/loaders/Layouts/ProductCard.tsx": $$$0,
     "deco-sites/campleite/loaders/List/Sections.tsx": $$$1,
-    "deco-sites/campleite/loaders/zequotes.ts": $$$4,
+    "deco-sites/campleite/loaders/zequotes.ts": $$$5,
   },
   "sections": {
     "deco-sites/campleite/sections/Animation/Animation.tsx": $$$$$$0,
@@ -85,42 +88,43 @@ const manifest = {
     "deco-sites/campleite/sections/Content/CallToAction.tsx": $$$$$$11,
     "deco-sites/campleite/sections/Content/Faq.tsx": $$$$$$12,
     "deco-sites/campleite/sections/Content/Features.tsx": $$$$$$13,
-    "deco-sites/campleite/sections/Content/Hero.tsx": $$$$$$14,
-    "deco-sites/campleite/sections/Content/ImageSection.tsx": $$$$$$15,
-    "deco-sites/campleite/sections/Content/Intro.tsx": $$$$$$16,
-    "deco-sites/campleite/sections/Content/Logos.tsx": $$$$$$17,
-    "deco-sites/campleite/sections/Content/Partners.tsx": $$$$$$18,
-    "deco-sites/campleite/sections/Content/RichText.tsx": $$$$$$19,
-    "deco-sites/campleite/sections/Content/Table.tsx": $$$$$$20,
-    "deco-sites/campleite/sections/Content/Testimonials.tsx": $$$$$$21,
-    "deco-sites/campleite/sections/Content/TextWithImage.tsx": $$$$$$22,
-    "deco-sites/campleite/sections/Content/zequotes.tsx": $$$$$$23,
-    "deco-sites/campleite/sections/Footer/Footer.tsx": $$$$$$24,
-    "deco-sites/campleite/sections/Gallery.tsx": $$$$$$25,
-    "deco-sites/campleite/sections/Header/Header.tsx": $$$$$$26,
-    "deco-sites/campleite/sections/Images/BannerGrid.tsx": $$$$$$27,
-    "deco-sites/campleite/sections/Images/Carousel.tsx": $$$$$$28,
-    "deco-sites/campleite/sections/Images/ImageGallery.tsx": $$$$$$29,
-    "deco-sites/campleite/sections/Images/ShoppableBanner.tsx": $$$$$$30,
-    "deco-sites/campleite/sections/Links/LinkTree.tsx": $$$$$$31,
-    "deco-sites/campleite/sections/Links/Shortcuts.tsx": $$$$$$32,
-    "deco-sites/campleite/sections/Miscellaneous/CampaignTimer.tsx": $$$$$$33,
-    "deco-sites/campleite/sections/Miscellaneous/CookieConsent.tsx": $$$$$$34,
-    "deco-sites/campleite/sections/Miscellaneous/Slide.tsx": $$$$$$35,
-    "deco-sites/campleite/sections/Newsletter/Newsletter.tsx": $$$$$$36,
-    "deco-sites/campleite/sections/Product/ImageGalleryFrontBack.tsx": $$$$$$37,
-    "deco-sites/campleite/sections/Product/NotFound.tsx": $$$$$$38,
-    "deco-sites/campleite/sections/Product/NotFoundChallenge.tsx": $$$$$$39,
-    "deco-sites/campleite/sections/Product/ProductDetails.tsx": $$$$$$40,
-    "deco-sites/campleite/sections/Product/ProductShelf.tsx": $$$$$$41,
-    "deco-sites/campleite/sections/Product/ProductShelfTabbed.tsx": $$$$$$42,
-    "deco-sites/campleite/sections/Product/SearchResult.tsx": $$$$$$43,
-    "deco-sites/campleite/sections/Product/ShelfWithImage.tsx": $$$$$$44,
-    "deco-sites/campleite/sections/Product/Wishlist.tsx": $$$$$$45,
-    "deco-sites/campleite/sections/Social/InstagramPosts.tsx": $$$$$$46,
-    "deco-sites/campleite/sections/Social/WhatsApp.tsx": $$$$$$47,
-    "deco-sites/campleite/sections/Theme/Theme.tsx": $$$$$$48,
-    "deco-sites/campleite/sections/Weather/Weather.tsx": $$$$$$49,
+    "deco-sites/campleite/sections/Content/Flags.tsx": $$$$$$14,
+    "deco-sites/campleite/sections/Content/Hero.tsx": $$$$$$15,
+    "deco-sites/campleite/sections/Content/ImageSection.tsx": $$$$$$16,
+    "deco-sites/campleite/sections/Content/Intro.tsx": $$$$$$17,
+    "deco-sites/campleite/sections/Content/Logos.tsx": $$$$$$18,
+    "deco-sites/campleite/sections/Content/Partners.tsx": $$$$$$19,
+    "deco-sites/campleite/sections/Content/RichText.tsx": $$$$$$20,
+    "deco-sites/campleite/sections/Content/Table.tsx": $$$$$$21,
+    "deco-sites/campleite/sections/Content/Testimonials.tsx": $$$$$$22,
+    "deco-sites/campleite/sections/Content/TextWithImage.tsx": $$$$$$23,
+    "deco-sites/campleite/sections/Content/zequotes.tsx": $$$$$$24,
+    "deco-sites/campleite/sections/Footer/Footer.tsx": $$$$$$25,
+    "deco-sites/campleite/sections/Gallery.tsx": $$$$$$26,
+    "deco-sites/campleite/sections/Header/Header.tsx": $$$$$$27,
+    "deco-sites/campleite/sections/Images/BannerGrid.tsx": $$$$$$28,
+    "deco-sites/campleite/sections/Images/Carousel.tsx": $$$$$$29,
+    "deco-sites/campleite/sections/Images/ImageGallery.tsx": $$$$$$30,
+    "deco-sites/campleite/sections/Images/ShoppableBanner.tsx": $$$$$$31,
+    "deco-sites/campleite/sections/Links/LinkTree.tsx": $$$$$$32,
+    "deco-sites/campleite/sections/Links/Shortcuts.tsx": $$$$$$33,
+    "deco-sites/campleite/sections/Miscellaneous/CampaignTimer.tsx": $$$$$$34,
+    "deco-sites/campleite/sections/Miscellaneous/CookieConsent.tsx": $$$$$$35,
+    "deco-sites/campleite/sections/Miscellaneous/Slide.tsx": $$$$$$36,
+    "deco-sites/campleite/sections/Newsletter/Newsletter.tsx": $$$$$$37,
+    "deco-sites/campleite/sections/Product/ImageGalleryFrontBack.tsx": $$$$$$38,
+    "deco-sites/campleite/sections/Product/NotFound.tsx": $$$$$$39,
+    "deco-sites/campleite/sections/Product/NotFoundChallenge.tsx": $$$$$$40,
+    "deco-sites/campleite/sections/Product/ProductDetails.tsx": $$$$$$41,
+    "deco-sites/campleite/sections/Product/ProductShelf.tsx": $$$$$$42,
+    "deco-sites/campleite/sections/Product/ProductShelfTabbed.tsx": $$$$$$43,
+    "deco-sites/campleite/sections/Product/SearchResult.tsx": $$$$$$44,
+    "deco-sites/campleite/sections/Product/ShelfWithImage.tsx": $$$$$$45,
+    "deco-sites/campleite/sections/Product/Wishlist.tsx": $$$$$$46,
+    "deco-sites/campleite/sections/Social/InstagramPosts.tsx": $$$$$$47,
+    "deco-sites/campleite/sections/Social/WhatsApp.tsx": $$$$$$48,
+    "deco-sites/campleite/sections/Theme/Theme.tsx": $$$$$$49,
+    "deco-sites/campleite/sections/Weather/Weather.tsx": $$$$$$50,
   },
   "apps": {
     "deco-sites/campleite/apps/decohub.ts": $$$$$$$$$$$0,
