@@ -8,6 +8,12 @@ export interface Prop {
   quantity?: number;
 }
 
+/**
+ * Fetches a random quote from the ZenQuotes API and returns it.
+ *
+ * @param prop - An optional object with a `quantity` property that specifies the number of quotes to fetch.
+ * @returns A `Quotes` object containing the fetched quote(s).
+ */
 export default async function zenquotes(
   prop: Prop,
   _req: Request,
