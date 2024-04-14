@@ -1,1 +1,1 @@
-export { default } from '../../components/ui/zequotes.tsx'
+export { default } from "../../components/ui/zequotes.tsx";

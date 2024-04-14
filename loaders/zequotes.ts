@@ -1,12 +1,11 @@
-
-import {  FnContext } from "deco/mod.ts";
+import { FnContext } from "deco/mod.ts";
 
 export interface Quotes {
-    data: string[]; 
+  data: string[];
 }
 
 export interface Prop {
-    quantity?: number; 
+  quantity?: number;
 }
 
 /**

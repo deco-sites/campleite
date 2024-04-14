@@ -1,1 +1,1 @@
-export {default } from 'deco-sites/campleite/components/ui/BannerTextImg.tsx';
+export { default } from "deco-sites/campleite/components/ui/BannerTextImg.tsx";
