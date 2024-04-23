@@ -48,10 +48,16 @@ function ProductGallery(
   const nextPage = pageInfo.nextPage
     ? new URL(pageInfo.nextPage, url.href)
     : null;
+
   const partialUrl = nextPage ? new URL(nextPage.href) : null;
+
+  console.log(pageInfo.nextPage && nextPage, "result");
+
   if (pageInfo.nextPage && nextPage) {
     partialUrl?.searchParams.set("partial", "true");
   }
+
+  console.log(partialUrl);
 
   return (
     <div
