@@ -5,16 +5,26 @@ import AddToCartButtonVTEX from "deco-sites/campleite/islands/AddToCartButton/vt
 import { usePlatform } from "deco-sites/campleite/sdk/usePlatform.tsx";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
 import { formatPrice } from "deco-sites/campleite/sdk/format.ts";
+import { Layout } from "deco-sites/campleite/components/product/MyProduct.tsx";
+import LikeButton from "deco-sites/campleite/islands/LikeButton.tsx";
 
 export interface Props {
   product: Product;
+
+  layout: Layout;
+
+  /** @description Ativar o zoom */
+  animateImage: boolean;
 }
 
-export default function HorizontalProductCard({ product }: Props) {
+export default function HorizontalProductCard(
+  { product, layout, animateImage }: Props,
+) {
   const platform = usePlatform();
 
   if (!product) return null;
 
+  const { maxWidth } = layout ?? { maxWidth: "max-w-3xl" };
   const { url, productID, name, image: images, offers, isVariantOf } = product;
   const description = product.description || isVariantOf?.description;
 
@@ -29,15 +39,21 @@ export default function HorizontalProductCard({ product }: Props) {
   });
 
   return (
-    <div class="flex flex-col lg:flex-row w-full max-w-screen-xl mx-auto py-4 px-4">
+    <div
+      class={`flex flex-col lg:flex-row w-full max-w-screen-xl mx-auto py-4 px-4 ${maxWidth}`}
+    >
       <div class="flex items-center justify-center lg:w-1/3">
-        <a href={url} alt="link to product">
+        <a href={url} alt="link to product" class={`overflow-hidden`}>
           <Image
             src={front.url!}
             width={200}
             height={279}
             alt={name}
-            class="bg-base-100 col-span-full row-span-full rounded w-full"
+            class={`bg-base-100 col-span-full row-span-full rounded w-full ${
+              animateImage
+                ? "hover:scale-125 transition-all duration-500 ease-out"
+                : ""
+            }`}
             sizes="(max-width: 640px) 50vw, 20vw"
             loading="lazy"
             decoding="async"
@@ -67,6 +83,10 @@ export default function HorizontalProductCard({ product }: Props) {
             </div>
             <span class="text-sm text-base-300">{installments}</span>
           </div>
+          {/** Like */}
+
+          <LikeButton productGroupID={product.productID} />
+
           {/* Add to Cart and Favorites button */}
           <div class="mt-4 sm:mt-10 flex flex-col gap-2">
             {availability
