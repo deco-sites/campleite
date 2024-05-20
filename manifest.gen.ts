@@ -13,6 +13,7 @@ import * as $$$6 from "./loaders/icons.ts";
 import * as $$$0 from "./loaders/Layouts/ProductCard.tsx";
 import * as $$$1 from "./loaders/List/Sections.tsx";
 import * as $$$7 from "./loaders/zequotes.ts";
+import * as $$$$$$$0 from "./matchers/utm.ts";
 import * as $$$$$$0 from "./sections/Animation/Animation.tsx";
 import * as $$$$$$1 from "./sections/Cards/IconCardsCarousel.tsx";
 import * as $$$$$$2 from "./sections/Cards/IconCardsCarouselWithImage.tsx";
@@ -134,6 +135,9 @@ const manifest = {
     "deco-sites/campleite/sections/Social/WhatsApp.tsx": $$$$$$50,
     "deco-sites/campleite/sections/Theme/Theme.tsx": $$$$$$51,
     "deco-sites/campleite/sections/Weather/Weather.tsx": $$$$$$52,
+  },
+  "matchers": {
+    "deco-sites/campleite/matchers/utm.ts": $$$$$$$0,
   },
   "actions": {
     "deco-sites/campleite/actions/sendVote.ts": $$$$$$$$$0,
