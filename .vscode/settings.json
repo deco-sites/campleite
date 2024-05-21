@@ -13,5 +13,8 @@
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "editor.wordBasedSuggestions": "matchingDocuments"
+  "editor.wordBasedSuggestions": "matchingDocuments",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  }
 }
