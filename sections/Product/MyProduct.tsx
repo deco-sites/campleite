@@ -26,6 +26,7 @@ export function LoadingFallback() {
           <div class="h-4 bg-gray-300 animate-pulse w-3/4 mt-2"></div>
         </div>
       </div>
+
     </div>
   );
 }
