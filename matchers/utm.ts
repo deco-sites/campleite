@@ -14,4 +14,5 @@ export default function Utm({ campaignName }: UtmProps, ctx: MatchContext): bool
   const url = new URL(ctx.request.url);
   const utmCampaign = url.searchParams.get('utm_campaign');
   return utmCampaign !== null && utmCampaign === campaignName;
+  
 }
